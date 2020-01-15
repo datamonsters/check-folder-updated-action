@@ -20,7 +20,7 @@ jobs:
 
     - name: Check updates
       id: check_folder
-      uses: ./.github/actions/check-diff/
+      uses: datamonsters/check-folder-updated-action@master
       with:
         folder: path/folder[/file]
 
