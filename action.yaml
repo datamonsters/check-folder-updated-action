@@ -1,0 +1,16 @@
+name: 'Ckeck changes in folder'
+author: 'Data Monsters'
+branding:
+  icon: 'eye'
+  color: 'green'
+description: 'Checks if there are changes in the given folder in the last commit'
+inputs:
+  folder:
+    description: 'path to folder or file'
+    required: true
+outputs:
+  has_changes:
+    description: 'Yes or No'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
